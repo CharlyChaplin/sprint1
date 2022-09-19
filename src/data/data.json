@@ -1,0 +1,124 @@
+{
+	"headerlinks": [
+	  { "url": "index.hbs", "link": "Home"},
+	  { "url": "login.hbs", "link": "Вход"},
+	  { "url": "register.hbs", "link": "Регистрация"},
+	  { "url": "selectchat.hbs", "link": "Выбрать чат"},
+	  { "url": "selectedchat.hbs", "link": "Выбранный чат"},
+	  { "url": "account.hbs", "link": "Профиль"},
+	  { "url": "401.hbs", "link": "401"},
+	  { "url": "403.hbs", "link": "403"},
+	  { "url": "404.hbs", "link": "404"},
+	  { "url": "500.hbs", "link": "500"}
+	],
+	"sidepanelChatItems": [
+		{
+			"webp": "../asserts/img/man_1.webp",
+			"png": "../asserts/img/man_1.png",
+			"name": "Андрей",
+			"owner": "",
+			"lastContent": "Изображение",
+			"time": "10:49",
+			"quantity": "2"
+		},
+		{
+			"webp": "../asserts/img/man_2.webp",
+			"png": "../asserts/img/man_2.png",
+			"name": "Киноклуб",
+			"owner": "Вы:",
+			"lastContent": "стикер",
+			"time": "12:00",
+			"quantity": ""
+		},
+		{
+			"webp": "../asserts/img/man_3.webp",
+			"png": "../asserts/img/man_3.png",
+			"name": "Илья",
+			"owner": "",
+			"lastContent": "Друзья, всем привет! У меня для вас очень особенный выпуск новостей!",
+			"time": "15:12",
+			"quantity": "4"
+		},
+		{
+			"webp": "../asserts/img/man_4.webp",
+			"png": "../asserts/img/man_4.png",
+			"name": "Вадим",
+			"owner": "Вы:",
+			"lastContent": "Круто!",
+			"time": "Пт",
+			"quantity": ""
+		},
+		{
+			"webp": "../asserts/img/man_1.webp",
+			"png": "../asserts/img/man_1.png",
+			"name": "тет-а-теты",
+			"owner": "",
+			"lastContent": "И Human Interface Guidelines и Material Design для вас рекомендуют",
+			"time": "Ср",
+			"quantity": ""
+		},
+		{
+			"webp": "../asserts/img/man_2.webp",
+			"png": "../asserts/img/man_2.png",
+			"name": "1, 2, 3",
+			"owner": "",
+			"lastContent": "Миллионы россиян ежедневно проводят десятки часов своего времени",
+			"time": "Пн",
+			"quantity": ""
+		},
+		{
+			"webp": "../asserts/img/man_3.webp",
+			"png": "../asserts/img/man_3.png",
+			"name": "Design Destroyer",
+			"owner": "",
+			"lastContent": "В 2008 году художник Jon Rafman начал собирать пожертвования для своего",
+			"time": "Пн",
+			"quantity": ""
+		},
+		{
+			"webp": "../asserts/img/man_4.webp",
+			"png": "../asserts/img/man_4.png",
+			"name": "Day.",
+			"owner": "",
+			"lastContent": "Так увлёкся работой по курсу, что совсем забыл его анонсировать в чате",
+			"time": "1 Мая 2020",
+			"quantity": ""
+		},
+		{
+			"webp": "../asserts/img/man_1.webp",
+			"png": "../asserts/img/man_1.png",
+			"name": "Стас Рогозин",
+			"owner": "",
+			"lastContent": "Можно или сегодня или завтра зайти забрать.",
+			"time": "12 Апр 2020",
+			"quantity": "22"
+		},
+		{
+			"webp": "../asserts/img/man_1.webp",
+			"png": "../asserts/img/man_1.png",
+			"name": "Алёна",
+			"owner": "",
+			"lastContent": "Завтра пойдём в поход в горы. Ты как смотришь на это?",
+			"time": "1 Июль 2006",
+			"quantity": "15"
+		},
+		{
+			"webp": "../asserts/img/man_3.webp",
+			"png": "../asserts/img/man_3.png",
+			"name": "Андрей",
+			"owner": "",
+			"lastContent": "Изображение",
+			"time": "10:49",
+			"quantity": "2"
+		},
+		{
+			"webp": "../asserts/img/man_4.webp",
+			"png": "../asserts/img/man_4.png",
+			"name": "Андрей",
+			"owner": "",
+			"lastContent": "Изображение",
+			"time": "10:49",
+			"quantity": "2"
+		}
+	]
+ }

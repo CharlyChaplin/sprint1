@@ -1,0 +1,24 @@
+
+{{#each data.sidepanelChatItems}}
+	
+	<div class="sidepanel-chat__item sidepanel-item">
+		<div class="sidepanel-item__box">
+			<div class="sidepanel-item__logo">
+				<picture>
+					<source srcset={{this.webp}}><img src={{this.png}}>
+				</picture>
+			</div>
+			<div class="sidepanel-item__caption">
+				<div class="sidepanel-item__name">{{this.name}}</div>
+				<div class="sidepanel-item__desc">
+					<div class="sidepanel-item__owner">{{this.owner}}</div>
+					<span>{{this.lastContent}}</span>
+				</div>
+			</div>
+			<div class="sidepanel-item__info">
+				<div class="sidepanel-item__time">{{this.time}}</div>
+				<div class="sidepanel-item__quantity"><span>{{this.quantity}}</span></div>
+			</div>
+		</div>
+	</div>
+{{/each}}

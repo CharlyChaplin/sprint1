@@ -1,0 +1,136 @@
+---
+man_3_webp: '../asserts/img/man_3.webp'
+man_3_png: '../asserts/img/man_3.png'
+---
+
+
+			{{!< base}}
+			<div class="account">
+				<div class="account__wrapper">
+					<div class="account__header header-account">
+						<div class="header-account__photo account-photo">
+							<picture>
+								<source srcset={{man_3_webp}}><img class="account-photo__image"
+									src={{man_3_png}}>
+							</picture>
+							<div class="account-photo__change-photo hidden">
+								<div class="account-photo__background">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 40 40" shape-rendering="geometricPrecision"
+										text-rendering="geometricPrecision">
+										<path
+											d="M36,2L4,2C2.89543,2,2,2.89543,2,4v21.2667l12.6547-2.9528C15.5486,22.1053,16.4635,22,17.3814,22h5.2372c.9179,0,1.8328.1053,2.7267.3139L38,25.2667L38,4c0-1.10457-.8954-2-2-2ZM4,0C1.79086,0,0,1.79086,0,4v32c0,2.2091,1.79086,4,4,4h32c2.2091,0,4-1.7909,4-4v-32c0-2.20914-1.7909-4-4-4L4,0Zm6.9091,14.5455c2.0083,0,3.6364-1.6281,3.6364-3.6364s-1.6281-3.63637-3.6364-3.63637-3.63634,1.62806-3.63634,3.63637s1.62806,3.6364,3.63634,3.6364Z"
+											clip-rule="evenodd" fill="#000" fill-rule="evenodd" />
+									</svg>
+								</div>
+								<span>Поменять аватар</span>
+								<label for="file" class="account-photo__file">
+									<i class="ion-images"></i>
+									<input type="file" id="file" style="display: none" name="image"
+										accept="image/gif,image/jpeg,image/jpg,image/png" multiple=""
+										data-original-title="upload photos" onChange="avatarFile(this)">
+								</label>
+							</div>
+						</div>
+						<div class="header-account__name">Иван</div>
+					</div>
+					<div class="account__content">
+						<div class="account__content-wrapper content-account">
+							<form class="content-account__form" action="">
+								<div class="content-account__line">
+									<div class="content-account__cell">Почта</div>
+									<input class="content-account__cell" type="email" name="email" placeholder="pochta@yandex.ru"
+										disabled>
+								</div>
+								<div class="content-account__line">
+									<div class="content-account__cell">Логин</div>
+									<input class="content-account__cell" type="text" name="login" placeholder="ivanivanov"
+										disabled>
+								</div>
+								<div class="content-account__line">
+									<div class="content-account__cell">Имя</div>
+									<input class="content-account__cell" type="text" name="first_name" placeholder="Иван"
+										disabled>
+								</div>
+								<div class="content-account__line">
+									<div class="content-account__cell">Фамилия</div>
+									<input class="content-account__cell" type="text" name="second_name" placeholder="Иванов"
+										disabled>
+								</div>
+								<div class="content-account__line">
+									<div class="content-account__cell">Имя в чате</div>
+									<input class="content-account__cell" type="text" name="display_name" placeholder="Иван"
+										disabled>
+								</div>
+								<div class="content-account__line">
+									<div class="content-account__cell">Телефон</div>
+									<input class="content-account__cell" type="tel" name="phone" placeholder="+7(909) 967-30-30"
+										disabled>
+								</div>
+								<button type="submit" class="content-account__submit"><span>Сохранить</span></button>
+							</form>
+						</div>
+					</div>
+					<div class="account__footer">
+						<div class="account__footer-wrapper footer-account">
+							<div class="footer-account__line">
+								<div class="footer-account__cell footer-account__cell--edit-account">Изменить данные</div>
+								<div class="footer-account__cell"></div>
+							</div>
+							<div class="footer-account__line">
+								<a href="passwordchange.hbs"
+									class="footer-account__cell footer-account__cell--edit-password">Изменить пароль</a>
+								<div class="footer-account__cell"></div>
+							</div>
+							<div class="footer-account__line">
+								<a href="index.hbs" class="footer-account__cell footer-account__cell--logout">Выйти</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	
+	<script type="text/javascript">
+		const editAccount = document.querySelector(".footer-account__cell--edit-account");
+		const contentAccountSubmit = document.querySelector(".content-account__submit");
+		const headerAccountName = document.querySelector(".header-account__name");
+		const accountPhotoImage = document.querySelector(".account-photo__image");
+		const accountPhotoChangePhoto = document.querySelector(".account-photo__change-photo");
+
+
+		editAccount.addEventListener("click", (e) => {
+			e.preventDefault();
+			const inputsCollection = document.querySelectorAll(".content-account__form input.content-account__cell");
+			for (let i of inputsCollection) {
+				i.value = i.getAttribute("placeholder");
+				i.removeAttribute("disabled");
+				i.classList.add("content-account__cell--input");
+				i.addEventListener("click", function () { this.select() });
+			}
+			headerAccountName.textContent = "";
+			contentAccountSubmit.style.opacity = "1";
+			contentAccountSubmit.style.marginTop = "40px";
+			contentAccountSubmit.style.marginBottom = "20px";
+			accountPhotoImage.classList.add("hidden");
+			accountPhotoChangePhoto.classList.remove("hidden");
+		});
+
+		contentAccountSubmit.addEventListener("click", (e) => {
+			const inputsCollection = document.querySelectorAll(".content-account__form input.content-account__cell");
+			const userName = document.getElementsByName("first_name");
+
+			const arr = [];
+			for (let i of inputsCollection) {
+				arr.push(i.value);
+			}
+			headerAccountName.textContent = (userName[0].value);
+			alert(arr.join("\r"));
+		});
+
+		function avatarFile(input) {
+			let file = input.files[0];
+			alert(file.name);
+		}
+
+	</script>
