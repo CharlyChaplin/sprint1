@@ -1,0 +1,183 @@
+---
+man_1_webp: '../asserts/img/man_1.webp'
+man_1_png: '../asserts/img/man_1.png'
+man_2_webp: '../asserts/img/man_2.webp'
+man_2_png: '../asserts/img/man_2.png'
+man_3_webp: '../asserts/img/man_3.webp'
+man_3_png: '../asserts/img/man_3.png'
+man_4_webp: '../asserts/img/man_4.webp'
+man_4_png: '../asserts/img/man_4.png'
+photo_webp: "../asserts/img/photo.webp"
+photo_png: "../asserts/img/photo.png"
+---
+
+
+		{{!< base}}
+		<main class="chat">
+			<div class="chat__sidepanel sidepanel-chat">
+				<div class="sidepanel-chat__header">
+					<div class="sidepanel-chat__account">
+						<a href="account.hbs">
+							<span>Профиль&nbsp;&nbsp;</span>
+							<svg id="ecUOvwEFxVL1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10 18"
+								shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+								<g transform="translate(-10.994202-6.995909)">
+									<path fill="#000"
+										d="M12,25c-.265803.001537-.521281-.102813-.71-.29-.189313-.187767-.295798-.443362-.295798-.71s.106485-.522233.295798-.71L18.59,16l-7.3-7.29c-.392122-.392122-.392122-1.027878,0-1.42s1.027878-.392122,1.42,0l8,8c.189313.187767.295798.443362.295798.71s-.106485.522233-.295798.71l-8,8c-.188719.187187-.444197.291537-.71.29Z" />
+								</g>
+								<g>
+									<rect width="32" height="32" rx="0" ry="0" fill="none" />
+								</g>
+							</svg>
+						</a>
+					</div>
+					<div class="sidepanel-chat__search search-bar">
+						<form action="" class="search-bar__box">
+							<div class="search-bar__icon ">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									viewBox="0 0 22 22" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+									<g>
+										<path
+											d="M8.55251,0C3.8306,0,0.001953,3.82865,0.001953,8.55059s3.828647,8.55061,8.550587,8.55061c1.81576,0,3.49966-.5664,4.88386-1.5311l.0011-.001l6.3415,6.3415c.1176.1177.3047.1207.4255,0l1.7091-1.7091c.1177-.1177.1116-.3128-.001-.4255L15.572,13.4355c.9647-1.3852,1.5311-3.0692,1.5311-4.88491C17.1031,3.82865,13.2745,0,8.55251,0Zm0,15.0893c-3.61138,0-6.53868-2.9273-6.53868-6.53871s2.92734-6.53868,6.53868-6.53868s6.53869,2.92731,6.53869,6.53868-2.9273,6.53871-6.53869,6.53871Z"
+											fill="#000" />
+									</g>
+								</svg>
+							</div>
+							<input type="text" class="search-bar__text" name="message" placeholder="Поиск">
+						</form>
+					</div>
+				</div>
+				<div class="sidepanel-chat__body">
+					{{> sidepanelChatItems}}
+				</div>
+			</div>
+
+			<div class="chat__main">
+				<div class="chat__content content-chat">
+					<div class="content-chat__header">
+						<div class="content-chat__header-wrapper header-chat">
+							<div class="header-chat__logo">
+								<picture>
+									<source srcset={{man_4_webp}}><img src={{man_4_png}} >
+								</picture>
+							</div>
+							<div class="header-chat__nickname">Вадим</div>
+							<div class="header-chat__menu menu-icon">
+								<div class="menu-icon__wrapper"><span></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="content-chat__body">
+						<div class="content-chat__body-wrapper body-chat">
+							<div class="body-chat__date"><span>19 июня</span></div>
+							<div class="body-chat__message chat-message--text">
+								<div class="chat-message__data chat-message__data">
+									<p>Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то
+										момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все
+										знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все
+										еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с
+										пленкой.</p><br>
+									<p>Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они
+										так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на
+										аукционе за 45000 евро.</p>
+								</div>
+								<div class="chat-message__footer">
+									<span>11:56</span>
+								</div>
+							</div>
+							<div class="body-chat__message chat-message--media">
+								<div class="chat-message__data chat-message__data">
+									<picture>
+										<source srcset={{photo_webp}}><img src={{photo_png}}>
+									</picture>
+								</div>
+								<div class="chat-message__footer">
+									<span class="chat-message__footer">11:56</span>
+								</div>
+							</div>
+							<div class="body-chat__message chat-message--answer chat-message--text">
+								<div class="chat-message__data">
+									<span>Круто!</span>
+								</div>
+								<div class="chat-message__footer footer-message">
+									<div class="footer-message__status">
+										<svg id="ehUIDgLerbE1" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 14"
+											shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+											<g transform="translate(-410-125)">
+												<g transform="translate(408 120)">
+													<g transform="translate(3 6)">
+														<path d="M0,6l6,6" fill="none" fill-rule="evenodd" stroke="#000"
+															stroke-width="2" stroke-linecap="round" />
+														<path d="M6,12L18,0" fill="none" fill-rule="evenodd" stroke="#000"
+															stroke-width="2" stroke-linecap="round" />
+													</g>
+												</g>
+											</g>
+										</svg>
+										<svg id="ehUIDgLerbE1" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 14"
+											shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+											<g transform="translate(-410-125)">
+												<g transform="translate(408 120)">
+													<g transform="translate(3 6)">
+														<path d="M0,6l6,6" fill="none" fill-rule="evenodd" stroke="#000"
+															stroke-width="2" stroke-linecap="round" />
+														<path d="M6,12L18,0" fill="none" fill-rule="evenodd" stroke="#000"
+															stroke-width="2" stroke-linecap="round" />
+													</g>
+												</g>
+											</g>
+										</svg>
+									</div>
+									<div class="footer-message__time">12:00</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-chat__footer">
+						<div class="content-chat__footer-wrapper footer-chat">
+							<form action="" class="footer-chat__form">
+								<div class="footer-chat__icon">
+									<svg id="eIYWN6OFjf81" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 447 390"
+										shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+										<g>
+											<path fill="#000"
+												d="M478.649,149.063c-1.699-22.079-11.825-43.429-28.514-60.119-34.869-34.868-88.004-38.466-118.447-8.023L127.091,285.52c-9.39,9.389-14.561,21.873-14.561,35.152s5.171,25.764,14.561,35.154c9.39,9.389,21.874,14.561,35.153,14.561s25.764-5.172,35.153-14.561L401.995,151.227c3.905-3.905,3.905-10.237,0-14.143-3.906-3.905-10.236-3.905-14.143,0l-204.597,204.6c-5.612,5.611-13.074,8.703-21.011,8.703s-15.398-3.092-21.011-8.703c-5.612-5.613-8.703-13.074-8.703-21.012s3.091-15.398,8.703-21.01L345.831,95.063c22.645-22.646,63.091-19.046,90.162,8.023c13.315,13.316,21.383,30.188,22.715,47.511c1.288,16.743-3.93,31.891-14.691,42.652l-72.211,72.212L239.419,397.848c-20.614,20.613-48.022,31.967-77.175,31.967s-56.561-11.354-77.175-31.967-31.967-48.021-31.967-77.176c0-29.152,11.353-56.561,31.967-77.175L245.538,83.028c3.905-3.905,3.905-10.237,0-14.143-3.905-3.905-10.238-3.905-14.142,0L70.926,229.355c-24.391,24.391-37.824,56.822-37.824,91.316c0,34.496,13.433,66.926,37.825,91.318c24.392,24.391,56.822,37.824,91.317,37.824s66.925-13.434,91.317-37.824L385.948,279.602l72.211-72.212c14.956-14.954,22.234-35.669,20.49-58.327Z"
+												transform="translate(-33.102-60.290405)" />
+										</g>
+									</svg>
+								</div>
+								<input type="text" name="message" class="input" placeholder="Сообщение">
+								<button type="submit" class="footer-chat__submit-btn">
+									<svg id="ekRrycTnxCD1" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"
+										shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+										<g>
+											<line x1="-16" y1="0" x2="16" y2="0" transform="matrix(.956501 0 0 1 16 16)"
+												fill="none" stroke="#3f5787" stroke-width="2" stroke-linecap="round" />
+											<line x1="7.652008" y1="7.540794" x2="-7.652008" y2="-7.540794"
+												transform="translate(23.652008 8.459206)" fill="none" stroke="#3f5787"
+												stroke-width="2" stroke-linecap="round" />
+											<line x1="7.652008" y1="7.540794" x2="-7.652008" y2="-7.540794"
+												transform="matrix(-1 0 0 1 23.652008 23.540794)" fill="none" stroke="#3f5787"
+												stroke-width="2" stroke-linecap="round" />
+										</g>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	<script type="text/javascript">
+		const selectFile = document.querySelector(".footer-chat__icon");
+
+		selectFile.addEventListener("click", () => alert("Clicked"));
+
+		const menuIconWrapper = document.querySelector('.menu-icon__wrapper');
+		menuIconWrapper.addEventListener("click", () => alert("Clicked"));
+	</script>
