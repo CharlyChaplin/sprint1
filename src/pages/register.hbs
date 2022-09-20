@@ -1,0 +1,35 @@
+{{!< base}}
+<div class="auth">
+	<div class="auth__caption">Регистрация</div>
+	<form action="" class="auth__form">
+		<div class="auth__formheader">
+			<div class="auth__form-row">
+				<input type="email" name="email" class="input" placeholder="Почта">
+			</div>
+			<div class="auth__form-row">
+				<input type="text" name="login" class="input" placeholder="Логин">
+			</div>
+			<div class="auth__form-row">
+				<input type="text" name="first_name" class="input" placeholder="Имя">
+			</div>
+			<div class="auth__form-row">
+				<input type="text" name="second_name" class="input" placeholder="Фамилия">
+			</div>
+			<div class="auth__form-row">
+				<input type="tel" name="phone" class="input" placeholder="Телефон">
+			</div>
+			<div class="auth__form-row">
+				<input type="password" name="password" class="input" placeholder="Пароль">
+			</div>
+			<div class="auth__form-row">
+				<input type="password" name="password1" class="input" placeholder="Пароль ещё раз">
+				<span class="input-error hidden">Пароли не совпадают</span>
+			</div>
+
+		</div>
+		<div class="auth__formfooter">
+			<button type="submit" class="">Регистрация</button>
+			<a href="login.hbs">Войти</a>
+		</div>
+	</form>
+	</div>

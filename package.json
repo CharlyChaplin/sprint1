@@ -1,0 +1,16 @@
+{
+	"name": "simple-example",
+	"version": "1.0.0-beta.1",
+	"scripts": {
+		"build": "parcel build ./src/pages/index.hbs --no-cache --public-url ./",
+		"start": "parcel ./src/pages/index.hbs --port=1234 --no-cache",
+		"serve": "serve -s ./src/dist"
+	},
+	"devDependencies": {
+		"@anikin/parcel-transformer-handlebars": "1.0.9",
+		"dotenv": "^16.0.2",
+		"express": "4.18.1",
+		"parcel": "2.7.0",
+		"serve": "14.0.1"
+	}
+}
