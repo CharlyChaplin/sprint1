@@ -120,5 +120,22 @@
 			"time": "10:49",
 			"quantity": "2"
 		}
-	]
+	],
+	"selectedChat": { 
+			"webp": "../asserts/img/man_4.webp",
+			"png": "../asserts/img/man_4.png"
+	},
+	"messageData": { 
+		"webp": "../asserts/img/photo.webp",
+		"png": "../asserts/img/photo.png"
+	},
+	"accountData": { 
+		"webp": "../asserts/img/man_3.webp",
+		"png": "../asserts/img/man_3.png"
+	},
+	"passwordChange": { 
+		"webp": "../asserts/img/man_3.webp",
+		"png": "../asserts/img/man_3.png"
+	}
+	 
  }

@@ -1,12 +1,11 @@
-
 const express = require('express')
 const path = require('path');
+const cfg = require('dotenv');
 const app = express();
-const port = 3000;
+const { PORT_EXPRESS } = cfg.config().parsed || 5000;
 
 app.use(express.static(path.join(__dirname, '/dist')));
-console.log(__dirname);
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(PORT_EXPRESS, () => {
+	console.log(`Server was started on port ${PORT_EXPRESS}`);
 })

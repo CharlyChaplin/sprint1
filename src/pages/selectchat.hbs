@@ -1,47 +1,44 @@
-		{{!< base}}
-		
-		<main class="chat">
-			<div class="chat__sidepanel sidepanel-chat">
-				<div class="sidepanel-chat__header">
-					<div class="sidepanel-chat__account">
-						<a href="account.hbs">
-							<span>Профиль&nbsp;&nbsp;</span>
-							<svg id="ecUOvwEFxVL1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10 18"
-								shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-								<g transform="translate(-10.994202-6.995909)">
-									<path fill="#000"
-										d="M12,25c-.265803.001537-.521281-.102813-.71-.29-.189313-.187767-.295798-.443362-.295798-.71s.106485-.522233.295798-.71L18.59,16l-7.3-7.29c-.392122-.392122-.392122-1.027878,0-1.42s1.027878-.392122,1.42,0l8,8c.189313.187767.295798.443362.295798.71s-.106485.522233-.295798.71l-8,8c-.188719.187187-.444197.291537-.71.29Z" />
-								</g>
-								<g>
-									<rect width="32" height="32" rx="0" ry="0" fill="none" />
-								</g>
-							</svg>
-						</a>
-					</div>
-					<div class="sidepanel-chat__search search-bar">
-						<form action="" class="search-bar__box">
-							<div class="search-bar__icon">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-									viewBox="0 0 22 22" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-									<g>
-										<path
-											d="M8.55251,0C3.8306,0,0.001953,3.82865,0.001953,8.55059s3.828647,8.55061,8.550587,8.55061c1.81576,0,3.49966-.5664,4.88386-1.5311l.0011-.001l6.3415,6.3415c.1176.1177.3047.1207.4255,0l1.7091-1.7091c.1177-.1177.1116-.3128-.001-.4255L15.572,13.4355c.9647-1.3852,1.5311-3.0692,1.5311-4.88491C17.1031,3.82865,13.2745,0,8.55251,0Zm0,15.0893c-3.61138,0-6.53868-2.9273-6.53868-6.53871s2.92734-6.53868,6.53868-6.53868s6.53869,2.92731,6.53869,6.53868-2.9273,6.53871-6.53869,6.53871Z"
-											fill="#000" />
-									</g>
-								</svg>
-							</div>
-							<input type="text" class="search-bar__text" name="message" placeholder="Поиск">
-						</form>
-					</div>
-				</div>
-				<div class="sidepanel-chat__body">
-					{{> sidepanelChatItems}}
-				</div>
+{{!< base}}
+<main class="chat">
+	<div class="chat__sidepanel sidepanel-chat">
+		<div class="sidepanel-chat__header">
+			<div class="sidepanel-chat__account">
+				<a href="account.hbs">
+					<span>Профиль&nbsp;&nbsp;</span>
+					<svg id="ecUOvwEFxVL1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 10 18" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+						<g transform="translate(-10.994202-6.995909)">
+							<path fill="#000"
+								d="M12,25c-.265803.001537-.521281-.102813-.71-.29-.189313-.187767-.295798-.443362-.295798-.71s.106485-.522233.295798-.71L18.59,16l-7.3-7.29c-.392122-.392122-.392122-1.027878,0-1.42s1.027878-.392122,1.42,0l8,8c.189313.187767.295798.443362.295798.71s-.106485.522233-.295798.71l-8,8c-.188719.187187-.444197.291537-.71.29Z" />
+						</g>
+						<g>
+							<rect width="32" height="32" rx="0" ry="0" fill="none" />
+						</g>
+					</svg>
+				</a>
 			</div>
+			<div class="sidepanel-chat__search search-bar">
+				<form action="" class="search-bar__box">
+					<div class="search-bar__icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22"
+							shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+							<g>
+								<path
+									d="M8.55251,0C3.8306,0,0.001953,3.82865,0.001953,8.55059s3.828647,8.55061,8.550587,8.55061c1.81576,0,3.49966-.5664,4.88386-1.5311l.0011-.001l6.3415,6.3415c.1176.1177.3047.1207.4255,0l1.7091-1.7091c.1177-.1177.1116-.3128-.001-.4255L15.572,13.4355c.9647-1.3852,1.5311-3.0692,1.5311-4.88491C17.1031,3.82865,13.2745,0,8.55251,0Zm0,15.0893c-3.61138,0-6.53868-2.9273-6.53868-6.53871s2.92734-6.53868,6.53868-6.53868s6.53869,2.92731,6.53869,6.53868-2.9273,6.53871-6.53869,6.53871Z"
+									fill="#000" />
+							</g>
+						</svg>
+					</div>
+					<input type="text" class="search-bar__text" name="message" placeholder="Поиск">
+				</form>
+			</div>
+		</div>
+		<div class="sidepanel-chat__body">
+			{{> sidepanelChatItems}}
+		</div>
+	</div>
 
-			<div class="chat__main main-chat__gag">
-				Выберите чат чтобы отправить сообщение
-			</div>
-		</main>
-	
+	<div class="chat__main main-chat__gag">
+		Выберите чат чтобы отправить сообщение
+	</div>
+	</main>

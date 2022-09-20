@@ -653,6 +653,7 @@ body {
 .content-chat__body {
 	padding: 10px 0;
 	overflow: auto;
+	height: 100%;
 }
 
 .content-chat__footer {
